@@ -182,8 +182,17 @@
       animation: fadeUp 0.8s 0.55s ease both;
     }
     .social-icons {
+      display: flex;
       flex-direction: row;
       justify-content: center;
+      align-items: center;
+      gap: 0.85rem;
+      margin-top: 0.35rem;
+    }
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      display: block;
     }
     /* Animations */
     @keyframes fadeUp {
