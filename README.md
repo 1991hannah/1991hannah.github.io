@@ -19,7 +19,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #dfa9cd 100%);
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       color: #ffffff;
     }
