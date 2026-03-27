@@ -233,21 +233,17 @@
 <body>
 
   <div class="container">
-
     <!-- 3D-style metallic star PNG -->
     <div class="star-wrapper">
     <img class="star-png" src="/images_icons/shiny-star.png?v=20260327b">
     </div>
-
     <img class="logo-img" src="/images_icons/peeep-logo.png?v=20260327b">
-
     <p class="headline">Something exciting is coming!</p>
     <p class="body-copy">
       Be the first to know when we launch.<br/>
       Sign up for our newsletter and we'll keep<br/>
       you in the loop.
     </p>
-
     <div class="form-group" id="formGroup">
       <input
         class="email-input"
@@ -257,11 +253,9 @@
         autocomplete="email"
       />
       <button class="btn" onclick="handleSubmit()">notify me</button>
+      <img src="/images_icons/icons/instagram.svg>
     </div>
-
     <p class="success-msg" id="successMsg">✦ you're on the list — we'll be in touch! ✦</p>
-
-    <p class="disclaimer">No spam ever, unsubscribe at any time</p>
   </div>
 
   <script>
