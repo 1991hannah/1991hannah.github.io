@@ -143,7 +143,6 @@
       padding: 0.85rem 1.2rem;
       outline: none;
       transition: background 0.2s, box-shadow 0.2s;
-      margin-bottom: 2rem;
     }
 
     .email-input::placeholder {
@@ -167,6 +166,7 @@
       cursor: pointer;
       transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
       box-shadow: 2px 3px 0 var(--btn-shadow);
+      margin-bottom: 2rem;
     }
 
     .btn:hover {
