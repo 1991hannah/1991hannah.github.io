@@ -2,8 +2,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peeep — Something exciting is coming!</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <title>Peeep</title>
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" /> -->
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -94,7 +94,7 @@
       font-size: clamp(2.4rem, 8vw, 3.8rem);
       color: var(--text-dark);
       letter-spacing: -0.01em;
-      margin-bottom: 2.4rem;
+      margin-bottom: 3rem;
       line-height: 1.15;
       animation: fadeUp 0.8s 0.15s ease both;
     }
