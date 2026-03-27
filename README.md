@@ -71,7 +71,6 @@
 
     /* Star */
     .star-wrapper {
-      margin-bottom: 1.8rem;
       animation: floatStar 4s ease-in-out infinite;
     }
 
