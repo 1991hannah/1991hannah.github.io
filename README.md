@@ -183,6 +183,7 @@
     }
     .social-icons {
       flex-direction: row;
+      justify-content: center;
     }
     /* Animations */
     @keyframes fadeUp {
