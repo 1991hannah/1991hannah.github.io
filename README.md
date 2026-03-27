@@ -64,8 +64,9 @@
 
     .logo-img {
       display: block;
-      background: transparent;
-      mix-blend-mode: multiply;
+      max-width: 200px;
+      height: auto;
+      background: transparent !important;
     }
 
     /* Star */
@@ -245,10 +246,10 @@
 
     <!-- 3D-style metallic star PNG -->
     <div class="star-wrapper">
-    <img class="star-png" src="/images_icons/shiny-star.png?v=20260327">
+    <img class="star-png" src="/images_icons/shiny-star.png?v=20260327b">
     </div>
 
-    <img class="logo-img" src="/images_icons/peeep-logo.png?v=20260327">
+    <img class="logo-img" src="/images_icons/peeep-logo.png?v=20260327b">
 
     <p class="headline">Something exciting is coming!</p>
     <p class="body-copy">
