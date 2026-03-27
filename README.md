@@ -248,7 +248,7 @@
     <img class="star-png" src="/images_icons/shiny-star.png?v=20260327">
     </div>
 
-    <img class="logo-img" src="/images_icons/peeep-logo.png?v=20260327">
+    <img class="logo-img" src="/images_icons/peeep-logo-pink-bg.png?v=20260327">
 
     <p class="headline">Something exciting is coming!</p>
     <p class="body-copy">
