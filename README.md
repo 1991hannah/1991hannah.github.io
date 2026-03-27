@@ -16,7 +16,7 @@
       --pink-light: #fdf0f5;
       --text-dark: #111111;
       --text-muted: #8a9cc2;
-      --text-body: #6a7fa8;
+      --text-body: #da0e8f;
       --border: #111111;
       --btn-bg: #ffffff;
       --btn-shadow: #c8a8b8;
@@ -258,7 +258,7 @@
       <button class="btn" onclick="handleSubmit()">notify me</button>
     </div>
 
-    <p class="success-msg" id="successMsg">✦ you're on the list — we'll be in touch!</p>
+    <p class="success-msg" id="successMsg">✦ you're on the list — we'll be in touch! ✦</p>
 
     <p class="disclaimer">No spam ever, unsubscribe at any time</p>
   </div>
