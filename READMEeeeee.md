@@ -29,7 +29,7 @@
 
     .logo-img {
       display: block;
-      margin: 0 auto 0.5rem;
+      margin: 0 auto 0rem;
       max-width: 180px;
       width: 100%;
       height: auto;
@@ -183,8 +183,6 @@
       </div>
       <p class="message" id="form-message" role="status" aria-live="polite"></p>
     </form>
-
-    <p class="privacy-note">No spam, ever. Unsubscribe at any time.</p>
   </main>
 
   <script>
