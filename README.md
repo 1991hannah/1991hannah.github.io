@@ -183,6 +183,7 @@
     }
     .social-icons {
       flex-direction: row;
+      justify-content: center;
     }
     /* Animations */
     @keyframes fadeUp {
@@ -231,7 +232,7 @@
         autocomplete="email"
       />
       <button class="btn" onclick="handleSubmit()">notify me</button>
-      <div cloass="social-icons">
+      <div class="social-icons">
       <img class="instagram-icon" src="/images_icons/icons/instagram.svg">
       <img class="tiktok-icon" src="/images_icons/icons/tiktok.svg">
       </div>
