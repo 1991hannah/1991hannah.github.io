@@ -64,7 +64,7 @@
 
     .logo-img {
       display: block;
-      max-width: 250px !important;
+      max-width: 200px !important;
       height: auto;
       background: transparent !important;
     }
@@ -86,7 +86,7 @@
     /* CSS 3D metallic star fallback */
     .star-png {
       mix-blend-mode: multiply;
-      filter: drop-shadow(0 8px 24px rgba(0,0,0,0.18)) drop-shadow(0 2px 4px rgba(0,0,0,0.12));
+      filter: drop-shadow(0 8px 24px rgba(0,0,0,0.4)) drop-shadow(0 2px 4px rgba(0,0,0,0.8));
     }
 
     /* Title */
