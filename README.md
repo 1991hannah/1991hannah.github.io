@@ -75,10 +75,12 @@
       width: 140px;
       height: 140px;
       display: block;
+      background: transparent;
     }
 
     /* CSS 3D metallic star fallback */
     .star-svg {
+      mix-blend-mode: multiply;
       filter: drop-shadow(0 8px 24px rgba(0,0,0,0.18)) drop-shadow(0 2px 4px rgba(0,0,0,0.12));
     }
 
@@ -239,7 +241,7 @@
 
     <!-- 3D-style metallic star SVG -->
     <div class="star-wrapper">
-    <img class="star-svg" src="/images_icons/shiny-star.png">
+    <img class="star-svg" src="/images_icons/shiny-star.png?v=20260327">
       <!-- <svg class="star-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="starGrad" cx="38%" cy="30%" r="65%">
