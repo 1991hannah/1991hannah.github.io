@@ -228,7 +228,7 @@
         autocomplete="email"
       />
       <button class="btn" onclick="handleSubmit()">notify me</button>
-      <img src="/images_icons/icons/instagram.svg>
+      <img src="/images_icons/icons/instagram.svg">
     </div>
     <p class="success-msg" id="successMsg">✦ you're on the list — we'll be in touch! ✦</p>
   </div>
