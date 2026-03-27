@@ -181,9 +181,8 @@
       letter-spacing: 0.04em;
       animation: fadeUp 0.8s 0.55s ease both;
     }
-    .tiktok-icon {
-      height: 24px,
-      width: 24px,
+    .social-icons {
+      flex-direction: row;
     }
     /* Animations */
     @keyframes fadeUp {
@@ -232,8 +231,10 @@
         autocomplete="email"
       />
       <button class="btn" onclick="handleSubmit()">notify me</button>
+      <div cloass="social-icons">
       <img class="instagram-icon" src="/images_icons/icons/instagram.svg">
       <img class="tiktok-icon" src="/images_icons/icons/tiktok.svg">
+      </div>
     </div>
     <p class="success-msg" id="successMsg">✦ you're on the list — we'll be in touch! ✦</p>
   </div>
