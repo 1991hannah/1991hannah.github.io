@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Peeep — Something exciting is coming!</title>
-  <img src="/images_icons/peeep-logo.png">
+  <img class="logo-img" src="/images_icons/peeep-logo.png?v=20260327">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after {
@@ -62,6 +62,12 @@
       max-width: 600px;
       width: 100%;
       animation: fadeUp 0.8s ease both;
+    }
+
+    .logo-img {
+      display: block;
+      background: transparent;
+      mix-blend-mode: multiply;
     }
 
     /* Star */

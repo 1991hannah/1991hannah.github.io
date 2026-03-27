@@ -27,6 +27,16 @@
       width: 100%;
     }
 
+    .logo-img {
+      display: block;
+      margin: 0 auto 0.5rem;
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      background: transparent;
+      mix-blend-mode: multiply;
+    }
+
     .logo {
       font-size: 3rem;
       font-weight: 800;
@@ -149,7 +159,7 @@
 </head>
 <body>
   <main class="container">
-  <img src="/images_icons/peeep-logo.png">
+  <img class="logo-img" src="/images_icons/peeep-logo.png?v=20260327">
   <img src="/images_icons/shiny-star-pink.png">
     <h1 class="logo">Peeep</h1>
     <p class="tagline">Something exciting is coming.</p>
