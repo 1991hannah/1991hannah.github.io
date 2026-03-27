@@ -1,10 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Peeep — Something exciting is coming!</title>
-  <img class="logo-img" src="/images_icons/peeep-logo.png?v=20260327">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after {
@@ -77,15 +75,15 @@
     }
 
     .star-wrapper img,
-    .star-wrapper .star-svg {
-      width: 140px;
-      height: 140px;
+    .star-wrapper .star-png {
+      width: 200px;
+      height: 200px;
       display: block;
       background: transparent;
     }
 
     /* CSS 3D metallic star fallback */
-    .star-svg {
+    .star-png {
       mix-blend-mode: multiply;
       filter: drop-shadow(0 8px 24px rgba(0,0,0,0.18)) drop-shadow(0 2px 4px rgba(0,0,0,0.12));
     }
@@ -228,7 +226,7 @@
 
     /* Responsive tweaks */
     @media (max-width: 480px) {
-      .star-wrapper .star-svg {
+      .star-wrapper .star-png {
         width: 100px;
         height: 100px;
       }
@@ -245,49 +243,12 @@
 
   <div class="container">
 
-    <!-- 3D-style metallic star SVG -->
+    <!-- 3D-style metallic star PNG -->
     <div class="star-wrapper">
-    <img class="star-svg" src="/images_icons/shiny-star.png?v=20260327">
-      <!-- <svg class="star-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="starGrad" cx="38%" cy="30%" r="65%">
-            <stop offset="0%"   stop-color="#f0f0f0"/>
-            <stop offset="25%"  stop-color="#d8d8dc"/>
-            <stop offset="55%"  stop-color="#a8a8b0"/>
-            <stop offset="80%"  stop-color="#888898"/>
-            <stop offset="100%" stop-color="#606070"/>
-          </radialGradient>
-          <radialGradient id="shineGrad" cx="30%" cy="25%" r="40%">
-            <stop offset="0%"   stop-color="rgba(255,255,255,0.85)"/>
-            <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
-          </radialGradient>
-          <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="rgba(0,0,0,0.25)"/>
-            <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="rgba(0,0,0,0.15)"/>
-          </filter>
-        </defs>
-        <!-- Star shape rotated slightly for dynamism -->
-        <g filter="url(#shadow)" transform="rotate(-12, 100, 100)">
-          <polygon
-            points="100,18 122,72 180,72 134,108 150,165 100,132 50,165 66,108 20,72 78,72"
-            fill="url(#starGrad)"
-          />
-          <polygon
-            points="100,18 122,72 180,72 134,108 150,165 100,132 50,165 66,108 20,72 78,72"
-            fill="url(#shineGrad)"
-          />
-          <!-- Edge highlight -->
-          <polygon
-            points="100,18 122,72 180,72 134,108 150,165 100,132 50,165 66,108 20,72 78,72"
-            fill="none"
-            stroke="rgba(255,255,255,0.4)"
-            stroke-width="1.5"
-          />
-        </g>
-      </svg> -->
+    <img class="star-png" src="/images_icons/shiny-star.png?v=20260327">
     </div>
 
-    <h1 class="title">Peeep</h1>
+    <img class="logo-img" src="/images_icons/peeep-logo.png?v=20260327">
 
     <p class="headline">Something exciting is coming!</p>
     <p class="body-copy">
