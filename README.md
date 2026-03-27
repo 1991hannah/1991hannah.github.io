@@ -201,18 +201,6 @@
       animation: fadeUp 0.8s 0.55s ease both;
     }
 
-    /* Miro badge */
-    .miro-badge {
-      position: fixed;
-      bottom: 1.4rem;
-      right: 1.6rem;
-      font-family: 'Space Mono', monospace;
-      font-size: 0.72rem;
-      letter-spacing: 0.04em;
-      color: var(--text-muted);
-      z-index: 10;
-    }
-
     /* Animations */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(18px); }
@@ -272,8 +260,6 @@
 
     <p class="disclaimer">No spam ever, unsubscribe at any time</p>
   </div>
-
-  <div class="miro-badge">miro</div>
 
   <script>
     function handleSubmit() {
