@@ -62,7 +62,7 @@
       max-width: 200px !important;
       height: auto;
       background: transparent !important;
-      padding-bottom: 4rem;
+      padding-bottom: 2rem;
     }
     /* Star */
     .star-wrapper {
