@@ -67,6 +67,7 @@
       max-width: 200px !important;
       height: auto;
       background: transparent !important;
+      padding-bottom: 10px;
     }
 
     /* Star */
