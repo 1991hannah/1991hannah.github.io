@@ -67,7 +67,7 @@
       max-width: 200px !important;
       height: auto;
       background: transparent !important;
-      padding-bottom: 50px;
+      padding-bottom: 4rem;
     }
 
     /* Star */
@@ -106,7 +106,7 @@
       font-size: clamp(0.85rem, 2.5vw, 1rem);
       color: var(--text-muted);
       letter-spacing: 0.04em;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       animation: fadeUp 0.8s 0.25s ease both;
     }
 
