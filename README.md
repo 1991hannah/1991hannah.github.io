@@ -1,12 +1,8 @@
-<!-- # 1991hannah.github.io -->
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Peeep — Coming Soon</title>
-  <title>Peeep holding page</title>
   <style>
     *, *::before, *::after {
       box-sizing: border-box;
@@ -19,7 +15,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: #dfa9cd 100%;
+      background: #fae6f0 100%;
       font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
       color: #ffffff;
     }
@@ -153,6 +149,8 @@
 </head>
 <body>
   <main class="container">
+  <img src="/images_icons/peeep-logo.png">
+  <img src="/images_icons/shiny-star-pink.png">
     <h1 class="logo">Peeep</h1>
     <p class="tagline">Something exciting is coming.</p>
     <p class="description">
