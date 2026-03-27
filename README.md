@@ -143,6 +143,7 @@
       padding: 0.85rem 1.2rem;
       outline: none;
       transition: background 0.2s, box-shadow 0.2s;
+      margin-bottom: 2rem;
     }
 
     .email-input::placeholder {
