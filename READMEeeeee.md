@@ -166,7 +166,6 @@
       Be the first to know when we launch.<br />
       Sign up for our newsletter and we'll keep you in the loop.
     </p>
-
     <form class="signup-form" id="signup-form" novalidate>
       <div class="input-row">
         <label for="email" class="sr-only">Email address</label>
