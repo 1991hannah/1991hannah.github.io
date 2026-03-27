@@ -181,7 +181,6 @@
         />
         <button type="submit" class="submit-btn">Notify Me</button>
       </div>
-      <p class="message" id="form-message" role="status" aria-live="polite"></p>
     </form>
     <img src="/images_icons/icons/instagram.svg>
   </main>
