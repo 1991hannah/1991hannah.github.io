@@ -181,6 +181,10 @@
       letter-spacing: 0.04em;
       animation: fadeUp 0.8s 0.55s ease both;
     }
+    .tiktok-icon {
+      height: 24px,
+      width: 24px,
+    }
     /* Animations */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(18px); }
@@ -228,7 +232,8 @@
         autocomplete="email"
       />
       <button class="btn" onclick="handleSubmit()">notify me</button>
-      <img src="/images_icons/icons/instagram.svg">
+      <img class="instagram-icon" src="/images_icons/icons/instagram.svg">
+      <img class="tiktok-icon" src="/images_icons/icons/tiktok.svg">
     </div>
     <p class="success-msg" id="successMsg">✦ you're on the list — we'll be in touch! ✦</p>
   </div>
