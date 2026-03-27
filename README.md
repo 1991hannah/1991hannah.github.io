@@ -64,7 +64,7 @@
 
     .logo-img {
       display: block;
-      max-width: 100px !important;
+      max-width: 250px !important;
       height: auto;
       background: transparent !important;
     }
