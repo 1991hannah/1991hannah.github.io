@@ -29,7 +29,7 @@
 
     .logo-img {
       display: block;
-      margin: 0 auto 0rem;
+      margin: 0 auto 0.5rem;
       max-width: 180px;
       width: 100%;
       height: auto;
@@ -183,6 +183,7 @@
       </div>
       <p class="message" id="form-message" role="status" aria-live="polite"></p>
     </form>
+    <img src="/images_icons/icons/instagram.svg>
   </main>
 
   <script>
