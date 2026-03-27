@@ -139,7 +139,7 @@
       color: var(--text-dark);
       background: rgba(255,255,255,0.7);
       border: 1.5px solid var(--border);
-      border-radius: 4px;
+      border-radius: 8px;
       padding: 0.85rem 1.2rem;
       outline: none;
       transition: background 0.2s, box-shadow 0.2s;
@@ -151,7 +151,7 @@
 
     .email-input:focus {
       background: rgba(255,255,255,0.95);
-      box-shadow: 0 0 0 3px rgba(138, 156, 194, 0.2);
+      box-shadow: 0 0 0 5px rgba(245, 95, 190, 0.38);
     }
 
     .btn {
