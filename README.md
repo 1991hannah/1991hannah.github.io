@@ -16,7 +16,8 @@
       --pink-light: #fdf0f5;
       --text-dark: #111111;
       --text-muted: #8a9cc2;
-      --text-body: #da0e8f;
+      --text-body: #6a7fa8;
+      --text-body-2: #da0e8f;
       --border: #111111;
       --btn-bg: #ffffff;
       --btn-shadow: #c8a8b8;
@@ -184,7 +185,7 @@
       display: none;
       font-family: 'Space Mono', monospace;
       font-size: 0.8rem;
-      color: var(--text-body);
+      color: var(--text-body-2);
       letter-spacing: 0.04em;
       animation: fadeUp 0.4s ease both;
     }
