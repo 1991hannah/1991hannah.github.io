@@ -10,7 +10,6 @@
       margin: 0;
       padding: 0;
     }
-
     :root {
       --pink-bg: #f5e0e8;
       --pink-light: #fdf0f5;
@@ -22,11 +21,9 @@
       --btn-bg: #ffffff;
       --btn-shadow: #c8a8b8;
     }
-
     html, body {
       height: 100%;
     }
-
     body {
       background-color: var(--pink-bg);
       font-family: 'Space Mono', monospace;
@@ -39,7 +36,6 @@
       position: relative;
       overflow-x: hidden;
     }
-
     /* Subtle noise texture overlay */
     body::before {
       content: '';
@@ -50,7 +46,6 @@
       pointer-events: none;
       z-index: 0;
     }
-
     .container {
       position: relative;
       z-index: 1;
@@ -62,7 +57,6 @@
       width: 100%;
       animation: fadeUp 0.8s ease both;
     }
-
     .logo-img {
       display: block;
       max-width: 200px !important;
@@ -70,12 +64,10 @@
       background: transparent !important;
       padding-bottom: 4rem;
     }
-
     /* Star */
     .star-wrapper {
       animation: floatStar 4s ease-in-out infinite;
     }
-
     .star-wrapper img,
     .star-wrapper .star-png {
       width: 200px;
@@ -83,13 +75,11 @@
       display: block;
       background: transparent;
     }
-
     /* CSS 3D metallic star fallback */
     .star-png {
       mix-blend-mode: multiply;
       filter: drop-shadow(0 8px 24px rgba(30, 26, 26, 0.4)) drop-shadow(0 2px 4px rgba(0,0,0,0.4));
     }
-
     /* Title */
     .title {
       font-family: 'Press Start 2P', monospace;
@@ -100,7 +90,6 @@
       line-height: 1.15;
       animation: fadeUp 0.8s 0.15s ease both;
     }
-
     /* Copy */
     .headline {
       font-family: 'Space Mono', monospace;
@@ -110,7 +99,6 @@
       margin-bottom: 2rem;
       animation: fadeUp 0.8s 0.25s ease both;
     }
-
     .body-copy {
       font-family: 'Space Mono', monospace;
       font-size: clamp(0.78rem, 2.2vw, 0.9rem);
@@ -120,7 +108,6 @@
       margin-bottom: 2.2rem;
       animation: fadeUp 0.8s 0.35s ease both;
     }
-
     /* Form */
     .form-group {
       width: 100%;
@@ -131,7 +118,6 @@
       gap: 0.85rem;
       animation: fadeUp 0.8s 0.45s ease both;
     }
-
     .email-input {
       width: 100%;
       font-family: 'Space Mono', monospace;
@@ -145,16 +131,13 @@
       outline: none;
       transition: background 0.2s, box-shadow 0.2s;
     }
-
     .email-input::placeholder {
       color: #bbb;
     }
-
     .email-input:focus {
       background: rgba(255,255,255,0.95);
       box-shadow: 0 0 0 5px rgba(245, 95, 190, 0.38);
     }
-
     .btn {
       font-family: 'Space Mono', monospace;
       font-size: 0.78rem;
@@ -169,17 +152,14 @@
       box-shadow: 2px 3px 0 var(--btn-shadow);
       margin-bottom: 2rem;
     }
-
     .btn:hover {
       transform: translate(-1px, -1px);
       box-shadow: 4px 5px 0 var(--btn-shadow);
     }
-
     .btn:active {
       transform: translate(1px, 1px);
       box-shadow: 1px 1px 0 var(--btn-shadow);
     }
-
     /* Success state */
     .success-msg {
       display: none;
@@ -189,11 +169,9 @@
       letter-spacing: 0.04em;
       animation: fadeUp 0.4s ease both;
     }
-
     .success-msg.visible {
       display: block;
     }
-
     /* Disclaimer */
     .disclaimer {
       margin-top: 2rem;
@@ -203,18 +181,15 @@
       letter-spacing: 0.04em;
       animation: fadeUp 0.8s 0.55s ease both;
     }
-
     /* Animations */
     @keyframes fadeUp {
       from { opacity: 0; transform: translateY(18px); }
       to   { opacity: 1; transform: translateY(0); }
     }
-
     @keyframes floatStar {
       0%, 100% { transform: translateY(0) rotate(-2deg); }
       50%       { transform: translateY(-10px) rotate(2deg); }
     }
-
     /* Responsive tweaks */
     @media (max-width: 480px) {
       .star-wrapper .star-png {
