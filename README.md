@@ -239,7 +239,8 @@
 
     <!-- 3D-style metallic star SVG -->
     <div class="star-wrapper">
-      <svg class="star-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <img class="star-svg" src="/images_icons/shiny-star.png">
+      <!-- <svg class="star-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <radialGradient id="starGrad" cx="38%" cy="30%" r="65%">
             <stop offset="0%"   stop-color="#f0f0f0"/>
@@ -275,7 +276,7 @@
             stroke-width="1.5"
           />
         </g>
-      </svg>
+      </svg> -->
     </div>
 
     <h1 class="title">Peeep</h1>
