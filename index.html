@@ -161,7 +161,7 @@
       box-shadow: 1px 1px 0 var(--btn-shadow);
     }
     /* Success state */
-    .success-msg {
+    .newsletter-msg {
       display: none;
       font-family: 'Space Mono', monospace;
       font-size: 0.8rem;
@@ -170,7 +170,7 @@
       animation: fadeUp 0.4s ease both;
       margin-bottom: 2rem;
     }
-    .success-msg.visible {
+    .newsletter-msg.visible {
       display: block;
     }
     /* Disclaimer */
@@ -233,18 +233,24 @@
       Sign up for our newsletter and we'll keep<br/>
       you in the loop.
     </p>
+
+
+
     <div class="form-group" id="formGroup">
       <input
         class="email-input"
         type="email"
-        id="emailInput"
+        id="newsletter-signup"
         placeholder="enter your email address"
         autocomplete="email"
       />
-      <button class="btn" onclick="handleSubmit()">notify me</button>
+      <button id="submit-email-btn" class="btn" onclick="handleSubmit()">notify me</button>
     </div>
-    <p class="success-msg" id="successMsg">✦ you're on the list — we'll be in touch! ✦</p>
-      <div class="social-icons">
+    <div class="newsletter-msg" id="newsletter-msg"></div>
+      
+    
+    
+    <div class="social-icons">
       <a href="https://www.instagram.com/peeep.co.uk" target="_blank">
       <img class="instagram-icon" src="/images_icons/icons/instagram.svg">
       </a>
@@ -253,13 +259,15 @@
   </div>
 
   <script>
-    function handleSubmit() {
-      const input = document.getElementById('emailInput');
+    async function handleSubmit() {
+      const input = document.getElementById('newsletter-signup');
       const formGroup = document.getElementById('formGroup');
       const successMsg = document.getElementById('successMsg');
-
+      const btn = document.getElementById('submit-email-btn');
+      const msg = document.getElementById('newsletter-msg');
       const email = input.value.trim();
       const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
 
       if (!valid) {
         input.style.borderColor = '#e08080';
@@ -271,19 +279,54 @@
         }, 1800);
         return;
       }
+    
+        // Basic client-side validation
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      showMsg('Please enter a valid email address.', 'error');
+      return;
+        }
 
-      formGroup.style.opacity = '0';
-      formGroup.style.transform = 'translateY(6px)';
-      formGroup.style.transition = 'opacity 0.3s, transform 0.3s';
+        btn.disabled    = true;
+        btn.textContent = 'Subscribing…';
+        msg.textContent = '';
+        msg.className   = 'newsletter-msg';
 
-      setTimeout(() => {
-        formGroup.style.display = 'none';
-        successMsg.classList.add('visible');
-      }, 300);
+    try {
+      const res = await fetch('https://newsletter-signup.0800hottie.workers.dev', {
+        method:  'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body:    JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        showMsg('✦ you\'re on the list — we\'ll be in touch! ✦', 'success');
+        emailInput.value = '';
+      } else {
+        showMsg(data.error || 'Something went wrong. Please try again.', 'error');
+      }
+    } catch {
+      showMsg('Unable to subscribe right now. Please try again later.', 'error');
+    } finally {
+      btn.disabled    = false;
+      btn.textContent = 'Subscribe';
     }
-
-    document.getElementById('emailInput').addEventListener('keydown', function(e) {
-      if (e.key === 'Enter') handleSubmit();
+  }
+  
+  function showMsg(text, type) {
+      const msg     = document.getElementById('newsletter-msg');
+      msg.textContent = text;
+      msg.className   = 'newsletter-msg ' + type;
+    }
+    
+          formGroup.style.opacity = '0';
+          formGroup.style.transform = 'translateY(6px)';
+          formGroup.style.transition = 'opacity 0.3s, transform 0.3s';
+  // Allow pressing Enter in the email input
+  document.getElementById('newsletter-signup')
+    .addEventListener('keydown', e => {
+      if (e.key === 'Enter') subscribeNewsletter();
     });
   </script>
 </body>
