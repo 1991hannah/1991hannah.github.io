@@ -242,7 +242,9 @@
       />
       <button class="btn" onclick="handleSubmit()">notify me</button>
       <div class="social-icons">
+      <a href="https://www.instagram.com/peeep.co.uk" target="_blank">
       <img class="instagram-icon" src="/images_icons/icons/instagram.svg">
+      </a>
       <img class="tiktok-icon" src="/images_icons/icons/tiktok.svg">
       </div>
     </div>
