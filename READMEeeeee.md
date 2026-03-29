@@ -181,7 +181,9 @@
         <button type="submit" class="submit-btn">Notify Me</button>
       </div>
     </form>
-    <img src="/images_icons/icons/instagram.svg>
+    <a href="https://www.instagram.com/peeep.co.uk" target="_blank">
+    <img src="/images_icons/icons/instagram.svg">
+    </a>
   </main>
 
   <script>
