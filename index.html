@@ -109,7 +109,7 @@
       animation: fadeUp 0.8s 0.35s ease both;
     }
     /* Form */
-    .form-group {
+    .newsletter-form {
       width: 100%;
       max-width: 420px;
       display: flex;
@@ -213,7 +213,7 @@
       .title {
         font-size: 2rem;
       }
-      .form-group {
+      .newsletter-form {
         max-width: 100%;
       }
     }
@@ -236,7 +236,7 @@
 
 
 
-    <div class="form-group" id="formGroup">
+    <div class="newsletter-form" id="formGroup">
       <input
         class="email-input"
         type="email"
@@ -244,7 +244,7 @@
         placeholder="enter your email address"
         autocomplete="email"
       />
-      <button id="submit-email-btn" class="btn" onclick="handleSubmit()">notify me</button>
+      <button id="submit-email-btn" class="submit-email-btn" onclick="handleSubmit()">notify me</button>
     </div>
     <div class="newsletter-msg" id="newsletter-msg"></div>
       
@@ -310,12 +310,12 @@
       showMsg('Unable to subscribe right now. Please try again later.', 'error');
     } finally {
       btn.disabled    = false;
-      btn.textContent = 'Subscribe';
+      btn.textContent = 'notify me';
     }
   }
   
   function showMsg(text, type) {
-      const msg     = document.getElementById('newsletter-msg');
+      const msg = document.getElementById('newsletter-msg');
       msg.textContent = text;
       msg.className   = 'newsletter-msg ' + type;
     }
@@ -323,6 +323,7 @@
           formGroup.style.opacity = '0';
           formGroup.style.transform = 'translateY(6px)';
           formGroup.style.transition = 'opacity 0.3s, transform 0.3s';
+
   // Allow pressing Enter in the email input
   document.getElementById('newsletter-signup')
     .addEventListener('keydown', e => {
