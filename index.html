@@ -56,6 +56,7 @@
       max-width: 600px;
       width: 100%;
       animation: fadeUp 0.8s ease both;
+      overflow: visible;
     }
     .logo-img {
       display: block;
@@ -67,6 +68,8 @@
     /* Star */
     .star-wrapper {
       animation: floatStar 4s ease-in-out infinite;
+      padding: 16px;
+      overflow: visible;
     }
     .star-wrapper img,
     .star-wrapper .star-png {
@@ -206,6 +209,9 @@
     }
     /* Responsive tweaks */
     @media (max-width: 480px) {
+      .star-wrapper {
+        padding: 20px;
+      }
       .star-wrapper .star-png {
         width: 100px;
         height: 100px;
